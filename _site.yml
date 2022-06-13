@@ -1,0 +1,12 @@
+name: "PortfolioBlog"
+title: "B.M. Galdo Blog"
+description: |
+  B.M. Galdo Blog
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article

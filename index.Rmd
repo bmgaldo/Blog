@@ -1,0 +1,5 @@
+---
+title: "B.M. Galdo Blog"
+site: distill::distill_website
+listing: posts
+---
