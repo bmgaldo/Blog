@@ -1,9 +1,17 @@
 ---
-title: "About this blog"
-description: |
-  Some additional details about the blog
+title: "Brendan Matthew Galdo"
+image: "denmark.jpeg"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/brendan-matthew-g-9108b375/"
+  - label: Twitter
+    url: "https://twitter.com/brendan_m_galdo"
+  - label: GitHub
+    url: "https://github.com/bmgaldo"
+  - label: Email
+    url: "brendan.m.galdo@gmail.com"
+output:
+  postcards::jolla
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+ 
+I'm a data scientist well-versed in the ways of Bayesian Inference and machine learning. My education was in statistics and cognitive neuroscience. I'm also an electronic musician ([Listen Here](https://open.spotify.com/artist/2uEo8Rajpdz1AqineCVLHq)) and an avid Starcraft 2 player.

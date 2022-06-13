@@ -1,19 +1,26 @@
 {
   "articles": [
     {
-      "path": "about.html",
-      "title": "About this blog",
-      "description": "Some additional details about the blog",
+      "path": "about_old.html",
+      "title": "About Me",
+      "description": "",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2022-06-13T11:15:56-04:00"
+      "contents": "\nI’m Brendan Matthew Galdo.\n\n\n\n",
+      "last_modified": "2022-06-13T13:07:52-04:00"
+    },
+    {
+      "path": "about.html",
+      "title": "Brendan Matthew Galdo",
+      "author": [],
+      "contents": "\n\n          \n          \n          B.M. Galdo Blog\n          \n          \n          Home\n          About\n          ☰\n          \n          \n      \n        \n          \n            Brendan Matthew Galdo\n          \n          \n            \n              I’m a data scientist well-versed in the ways of\n              Bayesian Inference and machine learning. My education was\n              in statistics and cognitive neuroscience. I’m also an\n              electronic musician (Listen\n              Here) and an avid Starcraft 2 player.\n            \n            \n              I’m a data scientist well-versed in the ways of\n              Bayesian Inference and machine learning. My education was\n              in statistics and cognitive neuroscience. I’m also an\n              electronic musician (Listen\n              Here) and an avid Starcraft 2 player.\n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      Twitter\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    Twitter\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2022-06-13T13:23:04-04:00"
     },
     {
       "path": "index.html",
       "title": "B.M. Galdo Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-06-13T11:15:56-04:00"
+      "last_modified": "2022-06-13T13:07:52-04:00"
     }
   ],
   "collections": ["posts/posts.json"]
