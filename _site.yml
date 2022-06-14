@@ -1,7 +1,7 @@
 name: "PortfolioBlog"
-title: "B.M. Galdo Blog"
+title: "Brendan Matthew Galdo"
 description: |
-  B.M. Galdo Blog
+  Brendan Matthew Galdo
 output_dir: "_site"
 navbar:
   right:
