@@ -1,0 +1,26 @@
+---
+title: "What is Likelihood-free Inference?"
+description: |
+  A briew overview of likelihood-free inference.
+author:
+  - name: Brendan Matthew Galdo
+    url: https://galdolabs.com
+date: 2022-06-13
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+Whether one has frequentist or Bayesian tendencies, estimating a model's parameters is centered around a model's likelihood function. In fact, the "[Likelihood Principle](https://en.wikipedia.org/wiki/Likelihood_principle#:~:text=In%20statistics%2C%20the%20likelihood%20principle,contained%20in%20the%20likelihood%20function.)" is the proposition that all information within the observed data $x$ about model parameters $\theta$ is contained within the likelihood function.
+
+A model $m$'s Likelihood function $L_m(\theta|x)$ returns the relative likelihood that $\theta$ generated the observed data $x$. Therefore, a natural estimator of $\theta$ is the one that maximizes $L_m(\theta|x)$ or the "most likely value". 
+
+Inference is "simple" then. One can use some optimization algorthim or another mathematical techinique to maximize $L_m(\theta|x)$ to estimate $\theta$. However, this is all given you can write down the likelihood function.
+
+The likelihood function is defined using the probability denisty or mass function of the model's data generating process. If our inference assumes $X \sim f_m(x|\theta)$ or in english the data is a random sample from model $m$ then $L(\theta|x)=f_m(x|\theta)$.
+
+Many of take knowing what the likelihood function for granted. If we are creative, there are many data generating processes or models we concieve of. However it's not always possible or obvious to connection $f_m(x|\theta)$. If we 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
