@@ -19,7 +19,7 @@ Inference is "simple" then. One can use some optimization algorthim or another m
 
 The likelihood function is defined using the probability denisty or mass function of the model's data generating process. If our inference assumes $X \sim f_m(x|\theta)$ or in english the data is a random sample from model $m$ then $L(\theta|x)=f_m(x|\theta)$.
 
-Many of take knowing what the likelihood function for granted. If we are creative, there are many data generating processes or models we concieve of. However it's not always possible or obvious to connection $f_m(x|\theta)$. If we 
+Many of us take knowing what the likelihood function for granted. If we are creative, there are many data generating processes or models we concieve of. However it's not always possible or obvious to connection $f_m(x|\theta)$. If we 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
