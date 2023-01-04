@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2022-06-13-what-is-likelihood-free-inference/",
+    "title": "What is Likelihood-free Inference?",
+    "description": "A briew overview of likelihood-free inference.",
+    "author": [
+      {
+        "name": "Brendan Matthew Galdo",
+        "url": "https://galdolabs.com"
+      }
+    ],
+    "date": "2022-06-13",
+    "categories": [],
+    "contents": "\nTLDR: Likelihood-free inference is a class of parameter estimation techniques for models we can simulate or sample from, but don’t have an easily derivable probability density/mass functions.\nWhether one has frequentist or Bayesian tendencies, estimating a model’s parameters is typically centered around a model’s likelihood function. In fact, the “Likelihood Principle” is the proposition that all information within the observed data \\(x\\) about model parameters \\(\\theta\\) is contained within the likelihood function.\nA model \\(m\\)’s Likelihood function \\(L_m(\\theta|x)\\) returns the relative likelihood that \\(\\theta\\) generated the observed data \\(x\\). Therefore, a natural estimator of \\(\\theta\\) is the one that maximizes \\(L_m(\\theta|x)\\) or the “most likely value”. Inference is “simple” then. One can use some optimization algorithm or another mathematical technique to maximize \\(L_m(\\theta|x)\\) to estimate \\(\\theta\\). However, this is all given you can write down or program up the likelihood function.\nThe likelihood function is defined using the probability density (or mass) function (PDF) of the model’s data generating process. If our inference assumes \\(x \\sim f_m(x|\\theta)\\), or, in English, the data was generate by model \\(m\\) then \\(L_m(\\theta|x)=f_m(x|\\theta)\\). For a vector of \\(N\\) samples \\(\\mathbf{x}\\), then \\(L_m(\\theta|\\mathbf{x})=\\prod_{i=1}^{N}f(x_i|\\theta)\\).\nWe often take knowledge of likelihood function for granted. If we are creative, there are many data generating processes we can conceive of that don’t have an obvious analytic expression for their PDF. In my home field of cognitive science, cognitive architectures are an example. A more common situation is a data generating process involving a stochastic differential equation. Stochastic differential equation models’ likelihood function are particularly challenging to derive. To summarize, you may be able to program up the data generating process, but if I can’t map that program to known probability distribution function, you won’t have access to the likelihood-function.\nLogistic Growth Model\nLet’s go through a concrete example featuring a classic model. Many of us may be familiar logistic growth curve for modeling population growth, \\[P(t) = \\frac{K}{1+e^{-r(t-t_0)}}\\]. \\(K\\) is the carrying capacity, \\(r\\) is the growth rate , \\(t_0\\) time point at the middle of sigmoid curve. Another parameterization in terms of the initial population \\(P_0\\) is \\[P(t) = \\frac{K}{1+\\frac{K-P_0}{P_0}(e^{-rt})}\\].\nThe change in population can be written in terms of the current population \\(P_t\\) as \\[\\frac{dP_t}{dt}=rP_t(1-\\frac{P_t}{K})\\]. Instead of a deterministic change in population, it may be more realistic that changes in population are stochastic, or analogous we may represent the uncertainty in the changes in the population as noise. One specific instantiation is Capocelli and Ricciardi’s 1974 stochastic logistic growth model with multiplicative noise \\[dP_t=rP_t(1-\\frac{P_t}{K})dt+\\sigma P_tdW_t\\] where \\(W_t\\) is there wiener diffusion process.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2023-01-04T00:26:38-05:00",
+    "input_file": "what-is-likelihood-free-inference.knit.md"
+  },
+  {
     "path": "posts/welcome/",
     "title": "Brendan Matthew Galdo",
     "description": "Electronic Musician + Data Scientist",
@@ -13,29 +30,7 @@
     "categories": [],
     "contents": "\n\n\n\n",
     "preview": {},
-<<<<<<< Updated upstream
-    "last_modified": "2022-06-13T12:45:03-04:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/2022-06-13-what-is-likelihood-free-inference/",
-    "title": "What is Likelihood-free Inference?",
-    "description": "A briew overview of likelihood-free inference.",
-    "author": [
-      {
-        "name": "Brendan Matthew Galdo",
-        "url": "https://galdolabs.com"
-      }
-    ],
-    "date": "2022-06-13",
-    "categories": [],
-    "contents": "\nWhether one has frequentist or Bayesian tendencies, estimating a model’s parameters is centered around a model’s likelihood function. In fact, the “Likelihood Principle” is the proposition that all information within the observed data \\(x\\) about model parameters \\(\\theta\\) is contained within the likelihood function.\nA model \\(m\\)’s Likelihood function \\(L_m(\\theta|x)\\) returns the relative likelihood that \\(\\theta\\) generated the observed data \\(x\\). Therefore, a natural estimator of \\(\\theta\\) is the most likely value of \\(\\theta\\) is the one that maximizes \\(L_m(\\theta|x)\\). This is given you can write down the likelihood function.\nInference is “simple” then. One can use some optimization algorthim or mathematical techinique to maximize \\(L_m(\\theta|x)\\) to estimate \\(\\theta\\).\nThe likelihood function is defined using the probability denisty or mass function of the model’s data generating. If our inference assumes \\(X \\sim f_m(x|\\theta)\\) or in english the data is a random sample from model \\(m\\) then \\(L(\\theta|x)=f_m(x|\\theta)\\). Many of us take knowledge of the likelihood function.\n\n\n\n",
-    "preview": {},
-    "last_modified": "2022-06-13T23:24:21-04:00",
-    "input_file": "what-is-likelihood-free-inference.knit.md"
-=======
     "last_modified": "2022-06-13T14:16:52-04:00",
-    "input_file": "welcome.knit.md"
->>>>>>> Stashed changes
+    "input_file": {}
   }
 ]
