@@ -2147,6 +2147,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <h1 id="logistic-growth-model">Logistic Growth Model</h1>
 <p>Let’s go through a concrete example featuring a classic model. Many of us may be familiar logistic growth curve for modeling population growth, <span class="math display">\[P(t) = \frac{K}{1+e^{-r(t-t_0)}}\]</span>. <span class="math inline">\(K\)</span> is the carrying capacity, <span class="math inline">\(r\)</span> is the growth rate , <span class="math inline">\(t_0\)</span> time point at the middle of sigmoid curve. Another parameterization in terms of the initial population <span class="math inline">\(P_0\)</span> is <span class="math display">\[P(t) = \frac{K}{1+\frac{K-P_0}{P_0}(e^{-rt})}\]</span>.</p>
 <p>The change in population can be written in terms of the current population <span class="math inline">\(P_t\)</span> as <span class="math display">\[\frac{dP_t}{dt}=rP_t(1-\frac{P_t}{K})\]</span>. Instead of a deterministic change in population, it may be more realistic that changes in population are stochastic, or analogous we may represent the uncertainty in the changes in the population as noise. One specific instantiation is <a href="https://www.sciencedirect.com/science/article/pii/0040580974900501">Capocelli and Ricciardi’s 1974</a> stochastic logistic growth model with multiplicative noise <span class="math display">\[dP_t=rP_t(1-\frac{P_t}{K})dt+\sigma P_tdW_t\]</span> where <span class="math inline">\(W_t\)</span> is there wiener diffusion process.</p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream
+Many of us take knowing what the likelihood function for granted. If we are creative, there are many data generating processes or models we concieve of. However it’s not always possible or obvious to connection <span class="math inline">\(f_m(x|\theta)\)</span>. If we
+=======
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
